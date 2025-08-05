@@ -17,8 +17,8 @@ This project demonstrates an end-to-end automated **CI/CD pipeline** using Jenki
    5. [Image Scan (Trivy)](#5-image-scan-trivy)  
    6. [Publish to ECR](#6-publish-to-ecr)  
    7. [Deploy to Kubernetes (Kops)](#7-deploy-to-kubernetes-kops)  
-5. [Conclusion / Outcome](#5-conclusion--outcome)  
-6. [Author](#6-author)  
+5. [Conclusion / Outcome](#conclusion--outcome)  
+6. [Author](#author)  
 
 ---
 
@@ -129,14 +129,14 @@ This project implements a fully automated CI/CD pipeline using Jenkins on AWS, e
   wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-<version>.zip
   unzip sonar-scanner-*.zip
 
-## Build Stage (Docker)
+## 4. Build Stage (Docker)
 
 - **Build Docker image**
   ```bash
   docker build -t <image-name> .
   ```
 
-## Image Scan (Trivy)
+## 5. Image Scan (Trivy)
 
 - **Install Trivy**
   ```bash
@@ -148,7 +148,7 @@ This project implements a fully automated CI/CD pipeline using Jenkins on AWS, e
     trivy image <image-name>
     ```
 
- ## Publish to ECR
+ ## 6. Publish to ECR
 
 - Create ECR private repo
   Use AWS Console or CLI
@@ -165,7 +165,7 @@ This project implements a fully automated CI/CD pipeline using Jenkins on AWS, e
   docker push <ecr-uri>
   ```
 
-## Deploy to Kubernetes (Kops)
+## 7. Deploy to Kubernetes (Kops)
 
 - Create Kubernetes cluster using Kops
 
@@ -178,7 +178,7 @@ This project implements a fully automated CI/CD pipeline using Jenkins on AWS, e
   kubectl apply -f deployment.yaml
    ```
 
-## Outcome
+## Conclusion / Outcome
 
 - Fully automated pipeline from GitHub to Kubernetes using Jenkins.
 
