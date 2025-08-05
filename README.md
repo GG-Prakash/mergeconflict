@@ -113,7 +113,7 @@ This project implements a fully automated CI/CD pipeline using Jenkins on AWS, e
   sudo systemctl restart jenkins
   ```
 
-## Test Analysis (SonarQube)
+## 3. Test Analysis (SonarQube)
 - **Run SonarQube in Docker**
   ```bash
   docker run -d --name sonarqube -p 9000:9000 sonarqube
