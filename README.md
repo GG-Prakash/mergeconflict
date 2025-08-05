@@ -37,6 +37,7 @@ This project implements a fully automated CI/CD pipeline using Jenkins on AWS, e
 -	Kubernetes (Kops) deployment of containerized applications with updated kubeconfig.
 
 ##  Architecture
+![Architecture](Assets/architecture.png)
 
 # Pre-Requisites
 
@@ -215,4 +216,3 @@ If you found this project helpful, please consider:
 
 
   
-
